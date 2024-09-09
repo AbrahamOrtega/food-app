@@ -94,7 +94,7 @@ export default function Hero() {
             <span className="text-[16px]">
               <IoTime />
             </span>
-            <span className="text-gray-600 font-medium">30 minutos</span>
+            <span className="text-gray-600 font-medium">30 Minutos</span>
           </div>
           <div className="flex w-fit py-[8px] px-[16px] bg-black/5 rounded-[24px] justify-center items-center gap-x-[8px] text-[14px]">
             <span className="text-[16px]">

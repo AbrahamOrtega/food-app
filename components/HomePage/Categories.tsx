@@ -97,7 +97,7 @@ export default function Categories() {
     <>
       <div className="flex flex-col w-full gap-y-[30px] lg:gap-y-[80px]">
         <div className="flex flex-wrap w-full justify-between gap-y-[16px] items-center">
-          <h3 className="text-[30px] lg:text-[48px] font-semibold">
+          <h3 className="text-[28px] lg:text-[48px] font-semibold">
             Categorías
           </h3>
           <button
@@ -105,7 +105,7 @@ export default function Categories() {
             className="w-fit h-fit px-[16px] py-[10px] lg:px-[20px] lg:py-[14px] bg-[#E7FAFE] rounded-[16px]"
           >
             <p className="text-[14px] lg:text-[16px] font-semibold">
-              {showAllCategories ? "Ocultar" : "Ver todas las categorías"}
+              {showAllCategories ? "Ocultar" : "Ver todo"}
             </p>
           </button>
         </div>
@@ -124,7 +124,7 @@ export default function Categories() {
               <Image
                 src={category.img}
                 alt={category.name}
-                className="w-[50px] h-[50px] lg:w-[90px] lg:h-[90px] "
+                className="w-[50px] h-[50px] lg:w-[70px] lg:h-[70px] "
                 style={{
                   filter: `drop-shadow(10px 16px 6px rgba(${category.color}, 0.25))`,
                 }}
