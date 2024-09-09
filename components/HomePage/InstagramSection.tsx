@@ -15,8 +15,10 @@ export default function InstagramSection() {
             "linear-gradient(to top, rgba(231,249,253, 1), rgba(231,249,253, 0))",
         }}
       >
-        <h1 className="text-[28px] font-semibold">Revisa nuestro Instagram</h1>
-        <p className="text-[16px] text-gray-500">
+        <h1 className="text-[28px] lg:text-[48px] font-semibold">
+          Revisa nuestro Instagram
+        </h1>
+        <p className="text-[16px] lg:text-[20px] text-gray-500">
           Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod
           tempor incididunt ut labore et dolore magna aliqut enim ad minim
         </p>
