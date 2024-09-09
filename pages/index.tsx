@@ -5,6 +5,7 @@ import InstagramSection from "@/components/HomePage/InstagramSection";
 import RecipesRecomendation from "@/components/HomePage/RecipesRecomendation";
 import RecipesSection from "@/components/HomePage/RecipesSection";
 import Navbar from "@/components/Navbar";
+import SubscribeSection from "@/components/SubscribeSection";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <AdSection />
         <InstagramSection />
         <RecipesRecomendation />
+        <SubscribeSection />
       </div>
     </>
   );
