@@ -1,6 +1,7 @@
 import { AdSection } from "@/components/HomePage/AdSection";
 import Categories from "@/components/HomePage/Categories";
 import Hero from "@/components/HomePage/Hero";
+import InstagramSection from "@/components/HomePage/InstagramSection";
 import RecipesSection from "@/components/HomePage/RecipesSection";
 import Navbar from "@/components/Navbar";
 
@@ -14,6 +15,7 @@ export default function Home() {
         <Categories />
         <RecipesSection />
         <AdSection />
+        <InstagramSection />
       </div>
     </>
   );
