@@ -97,7 +97,7 @@ export default function RecipesSection() {
     <>
       <div className="flex flex-col w-full justify-center items-center">
         <h1 className="font-semibold text-center text-[28px] lg:text-[56px]">
-          Deliciosas y simples recetas
+          Recetas simples y deliciosas
         </h1>
         <p className="text-center flex w-fit pt-[24px] lg:pt-[48px] lg:text-[18px]">
           Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod
@@ -122,9 +122,8 @@ export default function RecipesSection() {
                 <div className="flex w-full justify-end pt-[14px] pr-[14px] absolute z-10">
                   <button
                     onClick={() => handleFavorite(recipe.id)}
-                    className={`text-[${
-                      recipe.fav ? "#FF6363" : "#DBE2E5"
-                    }] text-[20px] p-[10px] bg-white rounded-full`}
+                    className="text-[20px] p-[10px] bg-white rounded-full"
+                    style={{ color: recipe.fav ? "#FF6363" : "#DBE2E5" }}
                   >
                     <FaHeart />
                   </button>

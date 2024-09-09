@@ -1,3 +1,4 @@
+import { AdSection } from "@/components/HomePage/AdSection";
 import Categories from "@/components/HomePage/Categories";
 import Hero from "@/components/HomePage/Hero";
 import RecipesSection from "@/components/HomePage/RecipesSection";
@@ -12,6 +13,7 @@ export default function Home() {
         <Hero />
         <Categories />
         <RecipesSection />
+        <AdSection />
       </div>
     </>
   );
