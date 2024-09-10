@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import { AdSection } from "@/components/HomePage/AdSection";
 import Categories from "@/components/HomePage/Categories";
 import Hero from "@/components/HomePage/Hero";
@@ -20,6 +21,7 @@ export default function Home() {
         <InstagramSection />
         <RecipesRecomendation />
         <SubscribeSection />
+        <Footer />
       </div>
     </>
   );

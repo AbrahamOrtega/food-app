@@ -6,7 +6,7 @@ export default function SubscribeSection() {
   return (
     <>
       <div className="flex flex-col w-full relative bg-[#E7F9FD] p-[20px] rounded-[36px] items-center overflow-hidden">
-        <div className="flex flex-col gap-y-[16px] z-10 text-center py-[32px] max-w-[500px] lg:max-w-[700px] ">
+        <div className="flex flex-col gap-y-[16px] lg:gap-y-[42px] z-10 text-center py-[32px] max-w-[500px] lg:max-w-[700px] ">
           <h1 className="text-[24px] lg:text-[40px] font-semibold">
             Delicias en tu bandeja de entrada
           </h1>
