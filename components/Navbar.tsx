@@ -26,7 +26,7 @@ export default function Navbar() {
             <Link href={"/recipes"}>Recetas</Link>
           </li>
           <li>
-            <Link href={"/blog"}>Blog</Link>
+            <Link href={"/blogs"}>Blog</Link>
           </li>
           <li>
             <Link href={"/about"}>Acerca de</Link>
@@ -69,7 +69,7 @@ export default function Navbar() {
               <li className="w-full flex">
                 <Link
                   className="w-full flex justify-center py-[10px]"
-                  href={"/blog"}
+                  href={"/blogs"}
                 >
                   Blog
                 </Link>

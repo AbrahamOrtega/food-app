@@ -14,12 +14,12 @@ export default function Footer() {
               Lorem ipsum dolor sit amet, consectetuipisicing elit,
             </p>
           </div>
-          <ul className="flex w-full flex-raw justify-between text-[16px] font-medium lg:w-1/3">
+          <ul className="flex w-full flex-raw justify-between text-[14px] font-medium lg:w-1/3">
             <li>
               <Link href="/recipes">Recetas</Link>
             </li>
             <li>
-              <Link href="/blog">Blog</Link>
+              <Link href="/blogs">Blog</Link>
             </li>
             <li>
               <Link href="/contact">Contacto</Link>
