@@ -16,9 +16,9 @@ export default function Navbar() {
   return (
     <>
       {/* Desktop Navbar */}
-      <div className="w-full hidden lg:flex justify-between py-[40px] px-[80px]">
+      <div className="w-full hidden lg:flex justify-between py-[24px] px-[80px]">
         <h1>Logo</h1>
-        <ul className="w-fit flex lg:gap-x-[56px] font-medium text-[18px]">
+        <ul className="w-fit flex lg:gap-x-[56px] font-medium text-[16px]">
           <li>
             <Link href={"/"}>Inicio</Link>
           </li>

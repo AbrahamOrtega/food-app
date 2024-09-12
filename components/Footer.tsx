@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="flex flex-col w-full gap-y-[16px] items-center lg:flex-row">
           <div className="flex flex-col w-full lg:w-2/3">
             <h3>Logo</h3>
-            <p className="text-[14px] lg:text-[18px] text-gray-500">
+            <p className="text-[12px] lg:text-[14px] text-gray-500">
               Lorem ipsum dolor sit amet, consectetuipisicing elit,
             </p>
           </div>
