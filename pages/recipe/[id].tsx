@@ -12,8 +12,9 @@ import { FaCircleCheck } from "react-icons/fa6";
 import { useState } from "react";
 import Food from "../../public/resources/Food.png";
 import SubscribeSection from "@/components/SubscribeSection";
-import { FaHeart } from "react-icons/fa";
 import Footer from "@/components/Footer";
+import Link from "next/link";
+import Recomendations from "@/components/Recomendations";
 
 const recipeGet = {
   title: "Health Japanese Fried Rice",
@@ -139,6 +140,7 @@ const recipesList = [
 ];
 
 export default function Recipe() {
+  const recipes = recipesList;
   // handle ingredients check
   const [recipe, setRecipe] = useState(recipeGet);
   const handleIngredientsCheck = (index: number, subindex: number) => {
@@ -153,18 +155,6 @@ export default function Recipe() {
     const newRecipe = { ...recipe };
     newRecipe.directions[index].check = !newRecipe.directions[index].check;
     setRecipe(newRecipe);
-  };
-
-  // Handle favorite recipe
-  const [recipes, setRecipes] = useState(recipesList);
-  const handleFavorite = (id: number) => {
-    const newRecipes = recipes.map((recipe) => {
-      if (recipe.id === id) {
-        return { ...recipe, fav: !recipe.fav };
-      }
-      return recipe;
-    });
-    setRecipes(newRecipes);
   };
 
   return (
@@ -410,7 +400,8 @@ export default function Recipe() {
           <div className="flex flex-col w-full lg:w-1/3 gap-y-[24px] mt-[16px] lg:mt-0">
             <h3 className="font-semibold text-[24px]">Otras Recetas</h3>
             {recipes.map((recipe) => (
-              <div
+              <Link
+                href={`/recipe/${recipe.id}`}
                 key={recipe.id}
                 className="flex w-full gap-x-[16px] items-center"
               >
@@ -427,7 +418,7 @@ export default function Recipe() {
                     By Author Author
                   </p>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
@@ -435,55 +426,7 @@ export default function Recipe() {
         <SubscribeSection />
 
         {/* Recipes recomendation */}
-        <div className="flex flex-col w-full">
-          <h3 className="text-[24px] lg:text-[36px] w-full text-center font-semibold">
-            Mira estas recetas deliciosas
-          </h3>
-          <div className="w-full grid grid-cols-1 mt-[8px] lg:mt-[56px] gap-[16px] md:grid-cols-2 md:gap-[24px] lg:grid-cols-4 lg:gap-[36px]">
-            {recipes.map((recipe) => (
-              <div
-                key={recipe.id}
-                className="flex flex-col rounded-[24px] py-[24px] gap-y-[24px]"
-              >
-                <div className="relative pb-[66%]">
-                  <Image
-                    className="absolute h-full w-full object-cover rounded-[24px] z-0"
-                    src={Food}
-                    alt="Preview"
-                  />
-                  <div className="flex w-full justify-end pt-[14px] pr-[14px] absolute z-10">
-                    <button
-                      onClick={() => handleFavorite(recipe.id)}
-                      className="text-[20px] p-[10px] bg-white rounded-full"
-                      style={{ color: recipe.fav ? "#FF6363" : "#DBE2E5" }}
-                    >
-                      <FaHeart />
-                    </button>
-                  </div>
-                </div>
-                <h3 className="text-[20px] font-semibold">
-                  Big and Juicy Wagyu Beef Cheeseburger
-                </h3>
-                <div className="flex gap-x-[24px] text-[14px]">
-                  <div className="flex items-center gap-x-[8px]">
-                    <span className="text-[16px]">
-                      <IoTime />
-                    </span>
-                    <span className="text-gray-600 font-medium">
-                      30 Minutos
-                    </span>
-                  </div>
-                  <div className="flex items-center gap-x-[8px]">
-                    <span className="text-[16px]">
-                      <PiForkKnifeFill />
-                    </span>
-                    <span className="text-gray-600 font-medium">Snack</span>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
+        <Recomendations />
 
         <Footer />
       </div>

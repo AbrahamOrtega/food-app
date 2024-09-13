@@ -2,7 +2,6 @@ import Navbar from "@/components/Navbar";
 import Food from "../public/resources/Food.png";
 import Image from "next/image";
 import Author from "../public/resources/author.png";
-import { useState } from "react";
 import SubscribeSection from "@/components/SubscribeSection";
 import Footer from "@/components/Footer";
 import Link from "next/link";
@@ -104,7 +103,7 @@ const recipesList = [
 ];
 
 export default function Blogs() {
-  const [recipes, setRecipes] = useState(recipesList);
+  const recipes = recipesList;
   return (
     <>
       <Navbar />
@@ -195,7 +194,8 @@ export default function Blogs() {
           <div className="flex flex-col w-full lg:w-1/3 gap-y-[24px] mt-[16px] lg:mt-0">
             <h3 className="font-semibold text-[24px]">Otras Recetas</h3>
             {recipes.map((recipe) => (
-              <div
+              <Link
+                href={`/recipe/${recipe.id}`}
                 key={recipe.id}
                 className="flex w-full gap-x-[16px] items-center"
               >
@@ -212,7 +212,7 @@ export default function Blogs() {
                     By Author Author
                   </p>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
