@@ -5,6 +5,7 @@ import Author from "../public/resources/author.png";
 import { useState } from "react";
 import SubscribeSection from "@/components/SubscribeSection";
 import Footer from "@/components/Footer";
+import Link from "next/link";
 
 const blogs = [
   {
@@ -107,8 +108,8 @@ export default function Blogs() {
   return (
     <>
       <Navbar />
-      <div className="w-full flex flex-col px-[20px] gap-y-[32px] md:gap-y-[56px] md:px-[40px] xl:px-[80px] lg:gap-y-[76px]">
-        <div className="flex flex-col text-center mt-[32px] gap-y-[16px]">
+      <div className="w-full flex flex-col px-[20px] gap-y-[24px] md:gap-y-[56px] md:px-[40px] xl:px-[80px] lg:gap-y-[76px]">
+        <div className="flex flex-col text-center mt-[24px] gap-y-[16px]">
           <h1 className="text-[24px] lg:text-[48px] font-semibold">
             Blogs y Articulos
           </h1>
@@ -138,8 +139,9 @@ export default function Blogs() {
         <div className="flex w-full flex-col lg:flex-row gap-y-[24px] lg:gap-x-[56px]">
           <div className="flex w-full flex-col lg:w-2/3 gap-y-[24px] lg:gap-y-[56px]">
             {blogs.map((blog) => (
-              <div
+              <Link
                 key={blog.id}
+                href={`/blog/${blog.id}`}
                 className="flex w-full gap-x-[12px] lg:gap-x-[24px]"
               >
                 <div className="flex w-2/5 rounded-[16px] relative">
@@ -167,10 +169,10 @@ export default function Blogs() {
                       <p className="font-semibold text-black">{blog.author}</p>
                     </div>
                     <div className="flex h-full w-[2px] bg-gray-200" />
-                    <p className="">{blog.date}</p>
+                    <p>{blog.date}</p>
                   </div>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
           {/* Pagination mobile */}
