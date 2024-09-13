@@ -29,6 +29,9 @@ export default function Navbar() {
             <Link href={"/blogs"}>Blog</Link>
           </li>
           <li>
+            <Link href={"/contact"}>Contacto</Link>
+          </li>
+          <li>
             <Link href={"/about"}>Acerca de</Link>
           </li>
         </ul>
@@ -72,6 +75,14 @@ export default function Navbar() {
                   href={"/blogs"}
                 >
                   Blog
+                </Link>
+              </li>
+              <li className="w-full flex">
+                <Link
+                  className="w-full flex justify-center py-[10px]"
+                  href={"/contact"}
+                >
+                  Contacto
                 </Link>
               </li>
               <li className="w-full flex">

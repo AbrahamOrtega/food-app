@@ -4,6 +4,7 @@ import Food from "../../public/resources/food.png";
 import { PiForkKnifeFill } from "react-icons/pi";
 import { MdOutlinePlayCircle } from "react-icons/md";
 import Author from "../../public/resources/author.png";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -51,12 +52,14 @@ export default function Hero() {
                   </span>
                 </div>
               </div>
-              <button className="w-fit flex px-[32px] py-[18px] rounded-[16px] gap-x-[16px] bg-black text-white">
-                <span className="font-semibold">Ver Receta</span>
-                <span className="text-[24px]">
-                  <MdOutlinePlayCircle />
-                </span>
-              </button>
+              <Link href="/recipe/1">
+                <button className="w-fit flex px-[32px] py-[18px] rounded-[16px] gap-x-[16px] bg-black text-white">
+                  <span className="font-semibold">Ver Receta</span>
+                  <span className="text-[24px]">
+                    <MdOutlinePlayCircle />
+                  </span>
+                </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -113,12 +116,14 @@ export default function Hero() {
               </span>
             </div>
           </div>
-          <button className="w-fit flex px-[12px] py-[12px] rounded-[16px] gap-x-[6px] bg-black text-white">
-            <span className="font-semibold text-[14px]">Ver Receta</span>
-            <span className="text-[20px]">
-              <MdOutlinePlayCircle />
-            </span>
-          </button>
+          <Link href="/recipe/1">
+            <button className="w-fit flex px-[12px] py-[12px] rounded-[16px] gap-x-[6px] bg-black text-white">
+              <span className="font-semibold text-[14px]">Ver Receta</span>
+              <span className="text-[20px]">
+                <MdOutlinePlayCircle />
+              </span>
+            </button>
+          </Link>
         </div>
       </div>
     </>

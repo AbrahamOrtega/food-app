@@ -7,7 +7,7 @@ import { LuPrinter } from "react-icons/lu";
 import { IoShareOutline } from "react-icons/io5";
 import Video from "../../public/resources/video.png";
 import { FaPlay } from "react-icons/fa";
-import Directions from "../../public/directions.png";
+import Directions from "../../public/resources/directions.png";
 import { FaCircleCheck } from "react-icons/fa6";
 import { useState } from "react";
 import Food from "../../public/resources/Food.png";

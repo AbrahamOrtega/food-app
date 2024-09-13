@@ -4,6 +4,7 @@ import Image from "next/image";
 import Food from "../../public/resources/food.png";
 import { FaHeart } from "react-icons/fa";
 import { useState } from "react";
+import { useRouter } from "next/router";
 
 const recipesList = [
   {
@@ -81,6 +82,7 @@ const recipesList = [
 ];
 
 export default function RecipesSection() {
+  const router = useRouter();
   // Handle favorite recipe
   const [recipes, setRecipes] = useState(recipesList);
   const handleFavorite = (id: number) => {
@@ -129,23 +131,30 @@ export default function RecipesSection() {
                   </button>
                 </div>
               </div>
-              <h3 className="text-[20px] font-semibold">
-                Big and Juicy Wagyu Beef Cheeseburger
-              </h3>
-              <div className="flex gap-x-[24px] text-[14px]">
-                <div className="flex items-center gap-x-[8px]">
-                  <span className="text-[16px]">
-                    <IoTime />
-                  </span>
-                  <span className="text-gray-600 font-medium">30 Minutos</span>
+              <button
+                className="flex flex-col text-left gap-y-[24px]"
+                onClick={() => router.push(`/recipe/${recipe.id}`)}
+              >
+                <h3 className="text-[20px] font-semibold">
+                  Big and Juicy Wagyu Beef Cheeseburger
+                </h3>
+                <div className="flex gap-x-[24px] text-[14px]">
+                  <div className="flex items-center gap-x-[8px]">
+                    <span className="text-[16px]">
+                      <IoTime />
+                    </span>
+                    <span className="text-gray-600 font-medium">
+                      30 Minutos
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-x-[8px]">
+                    <span className="text-[16px]">
+                      <PiForkKnifeFill />
+                    </span>
+                    <span className="text-gray-600 font-medium">Snack</span>
+                  </div>
                 </div>
-                <div className="flex items-center gap-x-[8px]">
-                  <span className="text-[16px]">
-                    <PiForkKnifeFill />
-                  </span>
-                  <span className="text-gray-600 font-medium">Snack</span>
-                </div>
-              </div>
+              </button>
             </div>
           ))}
         </div>
