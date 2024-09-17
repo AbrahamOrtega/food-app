@@ -1,7 +1,7 @@
 import { IoTime } from "react-icons/io5";
 import { PiForkKnifeFill } from "react-icons/pi";
 import Image from "next/image";
-import Food from "@/public/resources/food.png";
+const Food = "/resources/food.png";
 import { FaHeart } from "react-icons/fa";
 import { useState } from "react";
 import { useRouter } from "next/router";

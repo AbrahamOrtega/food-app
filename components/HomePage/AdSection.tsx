@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Chef from "@/public/resources/chef.png";
+const Chef = "/resources/chef.png";
 
 export const AdSection = () => {
   return (

@@ -1,11 +1,11 @@
 import Image from "next/image";
 import { useState, useEffect } from "react";
-import Rice from "@/public/resources/categories/rice.png";
-import Vegan from "@/public/resources/categories/vegan.png";
-import Meat from "@/public/resources/categories/meat.png";
-import Cake from "../../public/resources/categories/cake.png";
-import Shandwich from "@/public/resources/categories/sandwich.png";
-import Chocolate from "@/public/resources/categories/chocolate.png";
+const Rice = "/resources/categories/rice.png";
+const Vegan = "/resources/categories/vegan.png";
+const Meat = "/resources/categories/meat.png";
+const Cake = "/resources/categories/cake.png";
+const Shandwich = "/resources/categories/sandwich.png";
+const Chocolate = "/resources/categories/chocolate.png";
 
 const categories = [
   {

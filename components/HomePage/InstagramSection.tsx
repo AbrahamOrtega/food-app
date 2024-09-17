@@ -1,9 +1,9 @@
 import Image from "next/image";
 import { IoLogoInstagram } from "react-icons/io5";
-import Post1 from "@/public/resources/instagram/post1.png";
-import Post2 from "@/public/resources/instagram/post2.png";
-import Post3 from "@/public/resources/instagram/post3.png";
-import Post4 from "@/public/resources/instagram/post4.png";
+const Post1 = "/resources/instagram/post1.png";
+const Post2 = "/resources/instagram/post2.png";
+const Post3 = "/resources/instagram/post3.png";
+const Post4 = "/resources/instagram/post4.png";
 
 export default function InstagramSection() {
   return (
