@@ -10,7 +10,7 @@ import { FaPlay } from "react-icons/fa";
 import Directions from "@/public/resources/directions.png";
 import { FaCircleCheck } from "react-icons/fa6";
 import { useState } from "react";
-import Food from "@/public/resources/Food.png";
+import Food from "@/public/resources/food.png";
 import SubscribeSection from "@/components/SubscribeSection";
 import Footer from "@/components/Footer";
 import Link from "next/link";

@@ -1,5 +1,5 @@
 import Navbar from "@/components/Navbar";
-import Food from "@/public/resources/Food.png";
+import Food from "@/public/resources/food.png";
 import Image from "next/image";
 import Author from "@/public/resources/author.png";
 import SubscribeSection from "@/components/SubscribeSection";

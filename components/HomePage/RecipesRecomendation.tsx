@@ -1,4 +1,4 @@
-import Food from "@/public/resources/Food.png";
+import Food from "@/public/resources/food.png";
 import { FaHeart } from "react-icons/fa";
 import { IoTime } from "react-icons/io5";
 import { PiForkKnifeFill } from "react-icons/pi";

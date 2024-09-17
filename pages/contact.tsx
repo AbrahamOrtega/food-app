@@ -1,6 +1,6 @@
 import Navbar from "../components/Navbar";
 import Image from "next/image";
-import Chef from "@/public/resources/Chef2.png";
+import Chef from "@/public/resources/chef2.png";
 import SubscribeSection from "@/components/SubscribeSection";
 import Footer from "@/components/Footer";
 import Recomendations from "@/components/Recomendations";
