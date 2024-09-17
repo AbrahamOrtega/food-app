@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Salad1 from "../public/resources/salad1.png";
-import Salad2 from "../public/resources/salad2.png";
+import Salad1 from "@/public/resources/salad1.png";
+import Salad2 from "@/public/resources/salad2.png";
 
 export default function SubscribeSection() {
   return (

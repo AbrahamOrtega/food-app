@@ -1,9 +1,9 @@
 import { IoTime } from "react-icons/io5";
 import Image from "next/image";
-import Food from "../../public/resources/food.png";
+import Food from "@/public/resources/food.png";
 import { PiForkKnifeFill } from "react-icons/pi";
 import { MdOutlinePlayCircle } from "react-icons/md";
-import Author from "../../public/resources/author.png";
+import Author from "@/public/resources/author.png";
 import Link from "next/link";
 
 export default function Hero() {

@@ -1,8 +1,8 @@
 import Navbar from "../../components/Navbar";
 import Image from "next/image";
-import Author from "../../public/resources/author.png";
-import BlogImg from "../../public/resources/blog.png";
-import Directions from "../../public/resources/directions.png";
+import Author from "@/public/resources/author.png";
+import BlogImg from "@/public/resources/blog.png";
+import Directions from "@/public/resources/directions.png";
 import SubscribeSection from "@/components/SubscribeSection";
 import { FaFacebookF } from "react-icons/fa6";
 import { FaTwitter } from "react-icons/fa";
