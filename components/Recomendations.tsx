@@ -71,6 +71,8 @@ export default function Recomendations() {
             <div className="relative pb-[66%]">
               <Image
                 className="absolute h-full w-full object-cover rounded-[24px] z-0"
+                width={1000}
+                height={1000}
                 src={Food}
                 alt="Preview"
               />

@@ -29,11 +29,15 @@ export default function SubscribeSection() {
         </div>
         <div className="flex w-full h-full absolute flex-row z-0 ">
           <Image
+            width={1000}
+            height={1000}
             src={Salad2}
             alt=""
             className="absolute left-[-120px] bottom-[-80px] w-[320px] lg:w-[400px]"
           />
           <Image
+            width={1000}
+            height={1000}
             src={Salad1}
             alt=""
             className="absolute right-[-150px] bottom-[-130px] w-[320px] lg:w-[400px]"

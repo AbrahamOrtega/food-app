@@ -124,6 +124,8 @@ export default function Categories() {
               <Image
                 src={category.img}
                 alt={category.name}
+                width={100}
+                height={100}
                 className="w-[50px] h-[50px] lg:w-[70px] lg:h-[70px] "
                 style={{
                   filter: `drop-shadow(10px 16px 6px rgba(${category.color}, 0.25))`,

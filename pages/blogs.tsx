@@ -146,6 +146,8 @@ export default function Blogs() {
                 <div className="flex w-2/5 rounded-[16px] relative">
                   <Image
                     className="absolute h-full w-full object-cover rounded-[16px]"
+                    width={1000}
+                    height={1000}
                     src={blog.image}
                     alt="image"
                   />
@@ -162,6 +164,8 @@ export default function Blogs() {
                     <div className="flex flex-row gap-x-[8px] items-center">
                       <Image
                         className="rounded-full w-[24px]"
+                        width={24}
+                        height={24}
                         src={Author}
                         alt="author"
                       />
@@ -200,6 +204,8 @@ export default function Blogs() {
                 className="flex w-full gap-x-[16px] items-center"
               >
                 <Image
+                  width={1000}
+                  height={1000}
                   src={recipe.img}
                   alt="Recipe"
                   className="w-2/5 rounded-[16px]"

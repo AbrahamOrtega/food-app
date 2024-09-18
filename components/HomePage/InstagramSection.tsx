@@ -24,16 +24,16 @@ export default function InstagramSection() {
         </p>
         <div className="grid w-full grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[20px]">
           <div className="flex w-full justify-center">
-            <Image src={Post1} alt="Instagram" />
+            <Image src={Post1} width={1000} height={1000} alt="Instagram" />
           </div>
           <div className="flex w-full justify-center">
-            <Image src={Post2} alt="Instagram" />
+            <Image src={Post2} width={1000} height={1000} alt="Instagram" />
           </div>
           <div className="flex w-full justify-center">
-            <Image src={Post3} alt="Instagram" />
+            <Image src={Post3} width={1000} height={1000} alt="Instagram" />
           </div>
           <div className="flex w-full justify-center">
-            <Image src={Post4} alt="Instagram" />
+            <Image src={Post4} width={1000} height={1000} alt="Instagram" />
           </div>
         </div>
         <button className="flex w-fit bg-black p-[16px] gap-x-[14px] rounded-[16px]">

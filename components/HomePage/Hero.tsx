@@ -42,6 +42,8 @@ export default function Hero() {
               <div className="flex items-center gap-x-[16px]">
                 <Image
                   className="w-[50px] h-[50px]"
+                  width={50}
+                  height={50}
                   src={Author}
                   alt="Author"
                 />
@@ -66,6 +68,8 @@ export default function Hero() {
         <div className="relative w-1/2 flex">
           <Image
             className="absolute h-full w-full object-cover rounded-r-[24px]"
+            width={1000}
+            height={1000}
             src={Food}
             alt="Preview"
           />
@@ -77,6 +81,8 @@ export default function Hero() {
         <div className="relative pb-[66%]">
           <Image
             className="absolute h-full w-full object-cover rounded-[24px]"
+            width={1000}
+            height={1000}
             src={Food}
             alt="Preview"
           />
@@ -108,7 +114,13 @@ export default function Hero() {
         </div>
         <div className="w-full flex flex-wrap justify-between items-end gap-y-[16px]">
           <div className="flex items-center gap-x-[8px]">
-            <Image className="w-[50px] h-[50px]" src={Author} alt="Author" />
+            <Image
+              className="w-[50px] h-[50px]"
+              width={50}
+              height={50}
+              src={Author}
+              alt="Author"
+            />
             <div className="flex flex-col gap-y-[2px]">
               <span className="text-[12px] font-bold">Abraham Ortega</span>
               <span className="text-[10px] text-black/60 font-medium">

@@ -32,6 +32,8 @@ export default function Blog() {
           <div className="flex gap-y-[4px] text-[12px] lg:text-[14px] text-gray-500 items-center gap-x-[8px]">
             <div className="flex flex-row gap-x-[8px] items-center">
               <Image
+                width={24}
+                height={24}
                 className="rounded-full w-[24px]"
                 src={Author}
                 alt="author"
@@ -46,6 +48,8 @@ export default function Blog() {
 
         <div className="flex w-full h-[180px] md:h-[350px] lg:h-[600px] relative">
           <Image
+            width={1000}
+            height={1000}
             src={BlogImg}
             alt="blog"
             className="rounded-[26px] absolute w-full h-full object-cover"
@@ -87,7 +91,13 @@ export default function Blog() {
             <h3 className="text-[18px] font-semibold">
               Do you cook at home on your days off?
             </h3>
-            <Image src={Directions} alt="blog" className="rounded-[24px]" />
+            <Image
+              src={Directions}
+              width={1000}
+              height={1000}
+              alt="blog"
+              className="rounded-[24px]"
+            />
             <p className="text-[14px] text-gray-500">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
               ac ultrices odio. Nulla at congue diam, at dignissim turpis. Ut

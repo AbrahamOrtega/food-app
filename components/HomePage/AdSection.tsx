@@ -12,7 +12,13 @@ export const AdSection = () => {
             "linear-gradient(to top, rgba(231,249,253, 1), rgba(231,249,253, 0))",
         }}
       >
-        <Image src={Chef} alt="Ad" className="w-[220px]" />
+        <Image
+          src={Chef}
+          width={1000}
+          height={1000}
+          alt="Ad"
+          className="w-[220px]"
+        />
         <h1 className="text-[20px] font-semibold">
           Todos pueden ser un chef en su propia cocina
         </h1>

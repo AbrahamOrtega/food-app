@@ -169,6 +169,8 @@ export default function Recipe() {
               <div className="flex items-center gap-x-[16px]">
                 <Image
                   className="w-[50px] h-[50px]"
+                  width={50}
+                  height={50}
                   src={Author}
                   alt="Author"
                 />
@@ -227,7 +229,7 @@ export default function Recipe() {
         <div className="w-full flex lg:hidden flex-col gap-y-[18px] mt-[32px]">
           <h3 className="text-[24px] font-semibold">{recipe.title}</h3>
           <div className="flex items-center gap-x-[16px]">
-            <Image className="w-[50px] h-[50px]" src={Author} alt="Author" />
+            <Image width={50} height={50} src={Author} alt="Author" />
             <div className="flex flex-col gap-y-[2px]">
               <span className="text-[14px] font-bold">Autor Author</span>
               <span className="text-[12px] text-black/60 font-medium">
@@ -277,7 +279,13 @@ export default function Recipe() {
         {/* Destop and mobile video */}
         <div className="flex flex-col lg:flex-row w-full gap-y-[32px] gap-x-[40px]">
           <div className="flex lg:w-2/3 relative">
-            <Image className="rounded-[24px]" src={Video} alt="Food" />
+            <Image
+              className="rounded-[24px]"
+              width={1000}
+              height={1000}
+              src={Video}
+              alt="Food"
+            />
             <div className="flex w-fit absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] p-[24px] bg-slate-300 rounded-[50%]">
               <FaPlay className="text-[18px] lg:text-[24px]" />
             </div>
@@ -407,6 +415,8 @@ export default function Recipe() {
               >
                 <Image
                   src={Food}
+                  width={1000}
+                  height={1000}
                   alt="Recipe"
                   className="w-2/5 rounded-[16px]"
                 />

@@ -21,7 +21,7 @@ export default function Contact() {
                 "linear-gradient(to top, rgba(231, 249, 253, 1), rgba(231, 249, 253, 0))",
             }}
           >
-            <Image src={Chef} alt="Contact Us" />
+            <Image width={1000} height={1000} src={Chef} alt="Contact Us" />
           </div>
           <div className="flex flex-col w-full gap-y-[18px]">
             <div className="flex flex-col lg:flex-row gap-y-[10px] gap-x-[48px]">
